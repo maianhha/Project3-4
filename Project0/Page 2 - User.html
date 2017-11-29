@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume Uploader - User</title>
+</head>
+<body>
+
+<style>
+body {
+  background: #2D2D34;
+  font-family: Century Gothic;
+}
+
+h1 {
+  margin-top: 3%;
+  font-family: Century Gothic;
+  color: #fff;
+  text-align: center;
+}
+
+p {
+  margin-left: 34%;
+  margin-top: 3%;
+  color: #fff;
+  font-family: Century Gothic;
+}
+
+#signOut {
+  font-family: Century Gothic;
+  font-size: 18px;
+  color: #2D2D34;
+  position: relative;
+  left: 91.5%;
+  margin-top: 2%;
+}
+
+#uploadHeader {
+  margin: auto;
+  margin-top: 15%;
+  color: #fff;
+}
+
+#uploadBox {
+  margin: auto;
+  margin-top: 2%;
+  width: 29%;
+  border: 2px solid #fff;
+  padding: 25px 27px 25px 45px;
+}
+
+
+
+</style>
+
+
+
+<form action="Page 1.html" method="get">
+	<input type="submit" value="Sign Out" id="signOut">
+</form>
+
+<h1 id="uploadHeader"> Upload Resume/CV </h1>
+<div id="uploadBox">
+	<form enctype="multipart/form-data" action="upload.php" method="POST">
+        <input type="hidden" name="MAX_FILE_SIZE" value="512000" />
+        <input name="userfile" type="file" />
+        <input type="submit" value="Upload" />
+    </form>
+</div>
+
+<p> Please include your first and last name in the file name. </p>
+
+
+
+
+
+
+  
+</body>
+</html>
