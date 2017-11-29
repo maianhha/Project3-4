@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page 1</title>
+</head>
+<body>
+
+<style>
+body {
+  background: #2D2D34;
+  font-family: Century Gothic;
+  overflow: hidden;
+}
+h1 {
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: -4%;
+}
+h2 {
+  color: #fff;
+  font-size: 38px;
+  margin-top: 3%;
+}
+p {
+  color: #fff;
+}
+#loginBox {
+  position: relative;
+  left: 71%;
+  width: 26.5%;
+  border: 2px solid #fff;
+  padding: 20px 20px 20px 28px;
+  margin-top: 2.5%;
+  font-size: 18px;
+}
+.loginInput {
+  margin-top: 25px;
+  margin-bottom: -4px;
+}
+#logIn {
+  color: #2D2D34;
+  margin-top: 4%;
+  margin-left: 40%;
+  font-family: Century Gothic;
+  font-size: 17px;
+}
+#header {
+  position: absolute;
+  text-align: center;
+  left: 3%;
+  top: 15%;
+}
+#passwordHint {
+  font-size: 15px;
+  margin-top: 15px;
+}
+#logInHint {
+  text-align: center;
+  font-size: 15px;
+}
+a:link {
+  color: #1874CD;
+  text-decoration:none;
+}
+a:visited {
+  color: #1874CD;
+}
+a:hover {
+  color: white;
+}
+#terms {
+  margin-top: 30px;
+  text-align: center; 
+  font-size: 17px;
+}
+#viewTerms {
+  font-size: 15px;
+  margin-top: 5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.gallery {
+  width: 1500px;
+  height: 572px;
+  margin: 2% auto 0 4.25%;
+  padding: 5px;
+  background: #2D2D34;;
+}
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+.gallery > div > img {
+  display: block;
+  width: 300px;
+  height: 350px;
+  transition: .1s transform;
+  transform: translateZ(0);
+}
+.gallery > div:hover {
+  z-index: 1;
+}
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.cf:after {
+  clear: both;
+}
+</style>
+
+
+<script>
+	// THE LOGIN WILL AUTOMATICALLY RECOGNIZE THE USER AS STUDENT OR ADMIN
+	// DATA FOR USERS
+	// Assign and store users and password in an array of objects
+	var uLogin = 
+	[
+    {user: "Mai-Anh Ha", password: "UT_Ha"},
+    {user: "Sofia Shubert", password: "UT_Shubert"},
+    {user: "Logan Zipkes", password: "UT_Zipkes"},
+	{user: "Matthew McClelland", password: "UT_McClelland"},
+	{user: "Will He", password: "UT_He"},
+	{user: "Nina Ignatchenko", password: "UT_Ignatchenko"},
+	{user: "Jordan Alexander", password: "UT_Alexander"},
+	{user: "Sheryar Ali", password: "UT_Ali"},
+	{user: "Marguerite Ashby", password: "UT_Ashby"},
+	{user: "Alec Blish", password: "UT_Blish"},
+	{user: "Robert Brinson", password: "UT_Brinson"},
+	{user: "Jordan Cahill", password: "UT_Cahill"},
+	{user: "Andrew Chou", password: "UT_Chou"},
+	{user: "Hayden Cowart", password: "UT_Cowart"},
+	{user: "Nolan Daniels", password: "UT_Daniels"},
+	{user: "Hoang Dinh", password: "UT_Dinh"},
+	{user: "Amy Fang", password: "UT_Fang"},
+	{user: "Yifan Gao", password: "UT_Gao"},
+	{user: "Seferino Garcia", password: "UT_Garcia"},
+	{user: "Adam Hahn", password: "UT_Hahn"},
+	{user: "Jiawei He", password: "UT_He"},
+	{user: "Colin Higgins", password: "UT_Higgins"},
+	{user: "Vincent Hochstein", password: "UT_Hochstein"},
+	{user: "Aparna Kakarlapudi", password: "UT_Kakarlapudi"},
+	{user: "Anna Kong", password: "UT_Kong"},
+	{user: "Maria Krychniak", password: "UT_Krychniak"},
+	{user: "Joshua Levine", password: "UT_Levine"},
+	{user: "Zhihao Li", password: "UT_Li"},
+	{user: "Roy Lin", password: "UT_Lin"},
+	{user: "Justin Liu", password: "UT_Liu"},
+	{user: "Benjamin Maccini", password: "UT_Maccini"},
+	{user: "Nabeel Masood", password: "UT_Masood"},
+	{user: "Victor Mena", password: "UT_Mena"},
+	{user: "Nathan Mosley", password: "UT_Mosley"},
+	{user: "John Novak", password: "UT_Novak"},
+	{user: "Uzochukwu Nwabuisi", password: "UT_Nwabuisi"},
+	{user: "Stephen Owen", password: "UT_Owen"},
+	{user: "Sheena Panthaplackel", password: "UT_Panthaplackel"},
+	{user: "Juhi Pathak", password: "UT_Pathak"},
+	{user: "Elyse Peacock", password: "UT_Peacock"},
+	{user: "Luis Pedraza", password: "UT_Pedraza"},
+	{user: "Usman Siddiqui", password: "UT_Siddiqui"},
+	{user: "Katherine Smithroat", password: "UT_Smithroat"},
+	{user: "Isaac Tijerina", password: "UT_Tijerina"},
+	{user: "Garrett West", password: "UT_West"},
+	{user: "Jianing Xie", password: "UT_Xie"},
+	{user: "Ronghao Zhang", password: "UT_Zhang"},
+	{user: "Zhanhang Zhou", password: "UT_Zhou"},
+	];
+	
+	//console.log("User1 is " + uLogin[0].user + ". Password is " + uLogin[0].password);
+	//console.log("User2 is " + uLogin[1].user + ". Password is " + uLogin[1].password);
+	//console.log("User3 is " + uLogin[2].user + ". Password is " + uLogin[2].password);
+	//console.log("User1 is " + uLogin[3].user + ". Password is " + uLogin[3].password);
+	//console.log("User2 is " + uLogin[4].user + ". Password is " + uLogin[4].password);
+	//console.log("User3 is " + uLogin[5].user + ". Password is " + uLogin[5].password);
+	
+	//
+	
+	// DATA FOR ADMIN, only one
+	// Assign and store admin and password in an array of object
+	// There is an array for this one so it is easy to add more admins, if necessary
+	var aLogin = 
+	[{user: "Stephany Coffman-Wolph", password: "UT_Coffman-Wolph"}];
+	
+	//console.log("Admin is " + aLogin[0].user + ". Password is " + aLogin[0].password);
+	
+	
+	//
+	
+	// CHECK IF USER IS VALID
+	function isValidUser()
+	{
+		// get the user input form HTML
+		var username = document.getElementById("user").value;
+		var password = document.getElementById("pswrd").value;
+		
+		// USER CHECK
+		// if the username input is in uLogin, 
+		// then check to see if the password input corresponds to the valid username in the set data
+		for (var i=0; i<uLogin.length; i++)
+		{
+			// check to see if the user exists
+			if (username == uLogin[i].user)
+			{
+				//console.log("WELCOME USER");
+				// if the user exists, check to see if the password is correct
+				if (password == uLogin[i].password)
+				{
+					// if the password is correct, check to see if user agreed to the terms & conditions
+					if (document.getElementById("checkTerms").checked)
+					{
+						// TAKE TO NEXT PAGE
+						window.location.href = "Page 2 - Student.html";
+						//console.log("CORRECT USER PASSWORD");
+						//console.log("USER AGREED TO TERMS");
+					}
+					// if the password is correct but the user does not agree to the terms & conditions
+					else
+					{
+						window.alert("You must agree to the terms & conditions to log in!");
+						//console.log("CORRECT USER PASSWORD");
+						//console.log("USER HAS NOT AGREED TO TERMS");
+					}
+				}
+				// if the password is wrong, alert the user
+				else
+				{
+					window.alert("Invalid User Password!");
+					console.log("WRONG USER PASSWORD");
+				}
+			}
+			// if the user doesn't exist
+			// ISSUE with this because it would notify multiple times until the user is found 
+			else 
+			{
+				// window.alert("Invalid User!");
+				console.log("INVALID USER");
+			}
+		}
+		
+		//
+		
+		// ADMIN CHECK
+		// if the username input is in aLogin, 
+		// then check to see if the password input corresponds to the valid username in the set data
+		for (var j=0; j<aLogin.length; j++)
+		{
+			// check to see if the admin exists
+			if (username == aLogin[j].user)
+			{
+				console.log("WELCOME ADMIN");
+				// if the admin exists, check to see if the password is correct
+				if (password == aLogin[j].password)
+				{
+					// if the password is correct, check to see if admin agreed to the terms & conditions
+					if (document.getElementById("checkTerms").checked)
+					{
+						// TAKE TO NEXT PAGE
+						window.location.href = "Page 2 - Admin.html";
+						//console.log("CORRECT ADMIN PASSWORD");
+						//console.log("ADMIN AGREED TO TERMS");
+					}
+					// if the password is correct but the admin does not agree to the terms & conditions
+					else
+					{
+						window.alert("You must agree to the terms & conditions in order to log in!");
+						//console.log("CORRECT ADMIN PASSWORD");
+						//console.log("ADMIN HAS NOT AGREED TO TERMS");
+					}
+				}
+				// if the password is wrong, alert the admin
+				else
+				{
+					window.alert("Invalid Admin Password!");
+					//console.log("WRONG ADMIN PASSWORD");
+				}
+			}
+			// if the admin doesn't exist
+			// ISSUE with this because it would notify the user if the admin doesn't exist
+			else 
+			{
+				// window.alert("Invalid Admin!");
+				//console.log("INVALID ADMIN");
+			}
+		}
+	}
+	
+	
+</script>
+
+
+
+
+<div id="header">
+	<h1> Welcome! </h1>
+	<h2> ____________________________________ </h2>
+	<h2>Log in to view assignments!</h2>
+</div>
+
+<div id="loginBox">
+	<p id="logInHint"> * LOGIN IS CASE SENSITIVE </p>
+	<p class="loginInput"> First and Last Name: <input type="text" id="user"> </p>
+	<p id="passwordHint"> (name as it appears on Canvas) </p>
+	<p class="loginInput"> Password: <input type="text" id="pswrd"> </p>
+	<p id="passwordHint"> (password is 'UT_' + your last name) </p>
+	<div id="terms">
+		<p> <input type="checkbox" id="checkTerms"> I agree to the terms and conditions </p>
+		<p id="viewTerms"> <a href="Terms.html" target="_blank">View terms and conditions</a> </p>
+	</div>
+	<p>
+		<input id="logIn" type="submit" value="Log In" onclick="isValidUser()">
+	</p>
+</div>
+
+
+
+<div class="gallery cf">
+
+</div>
+
+
+  
+</body>
+</html>
