@@ -1,0 +1,18 @@
+Project 4 - Acceptance Testing
+
+1.  Enter student login credentials into Page 1. (student login credentials include first and last name capitalized first letter for the user name, password is "UT_"
+followed by the last name)
+	Page with title "Student Page" opens.
+
+2.  Enter Administrator login credentials into Page 1. (username: Stephany Coffman-Wolph; password: UT_Coffman-Wolph)
+	Page with title "Teach Page" opens. 
+
+3.  Click "Log Out" button on Student Page.
+	Return to the Login Page (Page 1). 
+
+4.  Click "View Terms and Conditions" button on Page 1.
+	Page with title "Terms and Conditions" opens.
+
+5. On the Administrator page, click any of the "Choose File" buttons.
+	Window with computer's files opens. 
+	
