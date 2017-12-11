@@ -1,0 +1,134 @@
+body {
+  background-image: url('Background1.jpg');
+  background-size: 100%;
+  font-family: Century Gothic;
+  overflow: hidden;
+}
+
+h1 {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: -4%;
+}
+
+h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-top: 3%;
+}
+
+p {
+  color: #fff;
+}
+
+#loginBox {
+  position: relative;
+  left: 71%;
+  width: 26.5%;
+  border: 2px solid #fff;
+  padding: 20px 20px 20px 28px;
+  margin-top: 2.5%;
+  font-size: 18px;
+}
+
+.loginInput {
+  margin-top: 25px;
+  margin-bottom: -4px;
+}
+
+#logIn {
+  color: #2D2D34;
+  margin-top: 4%;
+  margin-left: 40%;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-family: Century Gothic;
+  font-size: 17px;
+  cursor:pointer;
+}
+
+#header {
+  position: absolute;
+  text-align: center;
+  left: 8.5%;
+  top: 13%;
+}
+#passwordHint {
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+#logInHint {
+  text-align: center;
+  font-size: 15px;
+}
+
+a:link {
+  color: #66CDAA;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #66CDAA;
+}
+
+a:hover {
+  color: white;
+}
+
+#terms {
+  margin-top: 30px;
+  text-align: center; 
+  font-size: 17px;
+}
+
+#viewTerms {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery {
+  width: 1500px;
+  height: 572px;
+  margin: 1% auto 0 4%;
+  padding: 5px;
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  height: 250px;
+  margin-right: 7px;
+  transition: .1s transform;
+  transform: translateZ(0);
+}
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}

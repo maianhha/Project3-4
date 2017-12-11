@@ -1,0 +1,94 @@
+body {
+  background-image: url('Background2.jpg');
+  background-size: 105%;
+  font-family: Century Gothic;
+  color: #fff;
+}
+	
+#logOut {
+  font-family: Century Gothic;
+  font-size: 18px;
+  color: #2D2D34;
+  position: relative;
+  left: 91.5%;
+  margin-top: 2%;
+  cursor:pointer;
+}
+
+#assignmentBox {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 8%;
+  width: 35%;
+  border: 2px solid #fff;
+  padding: 8px 40px 40px 45px;
+  line-height: 200%;
+}
+
+#questBox {
+  position: absolute;
+  margin-left: 60%;
+  margin-top: 10%;
+  width: 15%;
+  height: 35%;
+  border: 2px solid #fff;
+  padding: 8px 40px 40px 45px;
+  line-height: 200%;
+  text-align: center;
+}
+
+#scores {
+  margin-left: 65.5%;
+  margin-top: 43%;
+}
+
+h1 {
+  position: absolute;
+  font-size: 45px;
+  margin-top: 2%;
+  margin-left: 15%;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 0%;
+  font-size: 25px;
+}
+
+hr {
+  margin-bottom: 15px;
+}
+
+#instructions {
+  position: absolute;
+  top: 68%;
+  left: 60%;
+  font-size: 17px;
+}
+
+#guild {
+  position: absolute;
+  top: 3%;
+  left: 49%;
+  font-size: 65px;
+  font-family: Chiller;
+  color: #DC143C;
+}
+
+button {
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
+
+a:link {
+  color: #2D2D34;
+  text-decoration: none;
+  font-family: Century Gothic;
+  font-size: 15px;
+}
+a:visited {
+  color: #2D2D34;
+}
+a:hover {
+  color: #2D2D34;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="page2AdminStyle.css">
+<title>Page 2 - Admin</title>
+</head>
+<body>
+
+
+    <form action="Page 1.html" method="get">
+		<input type="submit" value="Log Out" id="logOut">
+	</form>
+	
+	<h1>WELCOME ADMIN</h1>
+	
+	<p id="UploadInstructions"> * Please only upload PDF files, maximum size: 5MB </p>
+	
+	
+	<div id="uploadBox">
+		<h2> Homework </h2>
+		<hr>
+		<form enctype="multipart/form-data" action="Homework uploads.php" method="POST">
+			<input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
+			<input class="upload" name="userfile" type="file" />
+			<input class="upload" type="submit" value="Upload" />
+		</form>
+		
+        <h2> Quizzes </h2>
+		<hr>
+		<form enctype="multipart/form-data" action="Quiz uploads.php" method="POST">
+			<input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
+			<input class="upload" name="userfile" type="file" />
+			<input class="upload" type="submit" value="Upload" />
+		</form>
+		
+		<h2> Projects </h2>
+		<hr>
+		<form enctype="multipart/form-data" action="Project uploads.php" method="POST">
+			<input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
+			<input class="upload" name="userfile" type="file" />
+			<input class="upload" type="submit" value="Upload" />
+		</form>
+		
+		<h2> Exams </h2>
+		<hr>
+		<form enctype="multipart/form-data" action="Exam uploads.php" method="POST">
+			<input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
+			<input class="upload" name="userfile" type="file" />
+			<input class="upload" type="submit" value="Upload" />
+		</form>
+		
+	</div>
+
+	
+	
+	<div id="questUploadInstructions">
+		<p> To customize a quest: download the following document, <br> customize, save as a PDF file, and upload for students to view. </p>
+		<button type="button"><a href="New Quest.docx" target="_blank">Quest Template</a></button>
+	</div>
+	
+	
+	
+	<div id="qUploadBox">
+		<h2> Quests </h2>
+		<hr>
+		<form enctype="multipart/form-data" action="Quest uploads.php" method="POST">
+			<input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
+			<input class="upload" name="userfile" type="file" />
+			<input class="upload" type="submit" value="Upload" />
+		</form>
+		
+	</div>
+
+
+
+
+</body>
+</html>

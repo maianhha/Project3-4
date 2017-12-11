@@ -1,0 +1,10 @@
+  body {
+  background-image: url('Background2.jpg');
+  background-size: 105%;
+  font-family: Century Gothic;
+  color: #fff;
+  font-size: 18px;
+  line-height: 300%;
+  text-align: center;
+  margin-top: 5%;
+}

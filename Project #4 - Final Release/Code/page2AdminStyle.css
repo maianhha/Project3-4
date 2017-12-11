@@ -1,0 +1,87 @@
+body {
+  background-image: url('Background2.jpg');
+  background-size: 105%;
+  font-family: Century Gothic;
+  color: #fff;
+}
+	
+#logOut {
+  font-family: Century Gothic;
+  font-size: 18px;
+  color: #2D2D34;
+  position: relative;
+  left: 91.5%;
+  margin-top: 2%;
+  cursor:pointer;
+}
+
+#uploadBox {
+  position: absolute;
+  margin-left: 12%;
+  margin-top: 11%;
+  width: 27%;
+  border: 2px solid #fff;
+  padding: 10px 50px 50px 55px;
+  line-height: 200%;
+}
+
+#qUploadBox {
+  position: absolute;
+  margin-left: 52%;
+  margin-top: 25%;
+  width: 30%;
+  height: 14%;
+  border: 2px solid #fff;
+  padding: 8px 40px 40px 45px;
+  line-height: 200%;
+  text-align: center;
+}
+
+#UploadInstructions {
+  position: absolute;
+  top: 18.5%;
+  left: 33%;
+  font-size: 17px;
+}
+
+#questUploadInstructions {
+  position: absolute;
+  top: 30%;
+  left: 52%;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+}
+
+h1 {
+  position: absolute;
+  font-size: 45px;
+  margin-top: 1%;
+  margin-left: 15%;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 0%;
+  font-size: 25px;
+}
+
+.upload {
+  font-family: Century Gothic;
+  font-size: 15px;
+}
+
+a:link {
+  font-family: Century Gothic;
+  font-size: 15px;
+  color: #2D2D34;;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #2D2D34;;
+}
+
+a:hover {
+  color: #DC143C;
+}

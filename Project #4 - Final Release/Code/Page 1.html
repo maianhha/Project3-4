@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="page1Style.css">
+<title>Page 1</title>
+</head>
+<body>
+
+<script type="text/javascript" src="page1Login.js"></script>
+
+
+<div id="header">
+	<h1> WELCOME! </h1>
+	<h2> ____________________________________ </h2>
+	<h2>Log in to view/upload assignments!</h2>
+</div>
+
+<div id="loginBox">
+	<p id="logInHint"> * LOGIN IS CASE SENSITIVE </p>
+	<p class="loginInput"> First and Last Name: <input type="text" id="user"> </p>
+	<p id="passwordHint"> (name as it appears on Canvas) </p>
+	<p class="loginInput"> Password: <input type="text" id="pswrd"> </p>
+	<p id="passwordHint"> (password is 'UT_' + your last name) </p>
+	<div id="terms">
+		<p> <input type="checkbox" id="checkTerms"> I agree to the terms and conditions </p>
+		<p id="viewTerms"> <a href="Terms.html" target="_blank">View terms and conditions</a> </p>
+	</div>
+	<p>
+		<input id="logIn" type="submit" value="Log In" onclick="isValidUser()">
+	</p>
+</div>
+
+
+
+<div class="gallery cf">
+  <div>
+	<img src="Sample Image 1.png"> 
+  </div>
+  <div>
+    <img src="Sample Image 2.png"> 
+  </div>
+  <div>
+    <img src="Sample Image 3.png"> 
+  </div>
+</div>
+
+
+  
+</body>
+</html>
