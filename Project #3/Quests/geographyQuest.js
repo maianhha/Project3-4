@@ -153,19 +153,21 @@
     // keep track of user's answers
     let numCorrect = 0;
     let score = 0;
-
+    
+    console.log("Starting Points: 0");
     // for each question...
     myQuestions.forEach((currentQuestion, questionNumber) => {
       // find selected answer
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
+      
       // if answer is correct
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
         numCorrect++;
         score = currentQuestion.level + score;
+        console.log("+" + currentQuestion.level + " points");
 
         // color the answers green
         answerContainers[questionNumber].style.color = "lightgreen";
@@ -178,6 +180,15 @@
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    console.log("Total Points: " + score);
+    console.log("You got " + numCorrect + " out of " + myQuestions.length + " questions correct")
+    if ((numCorrect/myQuestions.length)*100 == 100) {
+      console.log("You received a " + (numCorrect/myQuestions.length)*100 + " % -- Mastery");
+    } else if ((numCorrect/myQuestions.length)*100 >= 100) {
+      console.log("You received a " + (numCorrect/myQuestions.length)*100 + " % -- Sufficient");
+    } else if ((numCorrect/myQuestions.length)*100 < 70) {
+      console.log("You received a " + (numCorrect/myQuestions.length)*100 + " % -- Insufficient");
+    }
     showSummary(numCorrect, myQuestions, score);
   }
 
